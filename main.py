@@ -6,7 +6,7 @@ from SecondWins import *
 
 class Root(QMainWindow):
     def __init__(self):
-        QMainWindow.__init__(self)
+        super(Root, self).__init__()
         self.setWindowTitle('GraHID')
         self.mdiArea = QMdiArea(self)
         # self.setStyleSheet(dark_style)
